@@ -10,9 +10,9 @@ You probably have your own preferences, feel free to hack and slash it.
 
 ```
 # install eslint
-$ yarn add @switz/eslint-config
+$ yarn add -D @switz/eslint-config
 # or
-$ npm install @switz/eslint-config
+$ npm install -D @switz/eslint-config
 ```
 
 Update your eslint config (`.eslintrc` or `.eslintrc.js`):
