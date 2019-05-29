@@ -1,0 +1,17 @@
+{
+  "name": "@switz/eslint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">= 5"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.13.0"
+  }
+}
