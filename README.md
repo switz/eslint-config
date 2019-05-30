@@ -9,7 +9,7 @@ You probably have your own preferences, feel free to hack and slash it.
 ## Installation
 
 ```
-# install eslint
+# yarn add eslint
 $ yarn add -D @switz/eslint-config
 # or
 $ npm install -D @switz/eslint-config
