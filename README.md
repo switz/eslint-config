@@ -13,7 +13,6 @@ You probably have your own preferences, feel free to hack and slash it.
 $ yarn add -D @switz/eslint-config
 # or
 $ npm install -D @switz/eslint-config
-# if you don't have an .eslintrc.js in your project, copy the sample .project-eslintrc.js into your project and rename it
 ```
 
 Update your eslint config (`.eslintrc` or `.eslintrc.js`):
@@ -27,8 +26,9 @@ Update your eslint config (`.eslintrc` or `.eslintrc.js`):
 ```
 
 ## Reference
+
 https://eslint.org/docs/developer-guide/shareable-configs
 
 ## License
-MIT, have fun
 
+MIT, have fun
