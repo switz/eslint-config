@@ -1,8 +1,8 @@
 {
   "name": "@switz/eslint-config",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "",
-  "main": ".eslintrc.js",
+  "main": "eslintrc.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
