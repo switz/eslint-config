@@ -1,12 +1,6 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-    node: true,
-  },
   extends: [
     'eslint:recommended',
-    'plugin:react/recommended',
   ],
   globals: {},
   parser: 'babel-eslint',
@@ -37,13 +31,7 @@ module.exports = {
     }],
     'quote-props': ['error', 'consistent-as-needed'],
     'quotes': ['error', 'single'],
-    'react/display-name': 'off',
     'semi': ['error', 'always'],
     'space-before-blocks': ['error'],
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 };
