@@ -25,6 +25,26 @@ Update your eslint config (`.eslintrc` or `.eslintrc.js`):
 }
 ```
 
+If you need React support, use
+
+```
+{
+  "extends": [
+    "@switz/eslint-config/react"
+  ]
+}
+```
+
+Or node:
+
+```
+{
+  "extends": [
+    "@switz/eslint-config/node"
+  ]
+}
+```
+
 ## Reference
 
 https://eslint.org/docs/developer-guide/shareable-configs
