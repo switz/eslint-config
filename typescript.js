@@ -5,9 +5,9 @@ module.exports = {
     node: true,
   },
   extends: [
-    './eslintrc.js',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/recommended',
+    './eslintrc.js'
   ],
   rules: {
   },
