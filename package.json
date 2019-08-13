@@ -1,6 +1,6 @@
 {
   "name": "@switz/eslint-config",
-  "version": "4.0.4",
+  "version": "4.0.5",
   "description": "",
   "main": "eslintrc.js",
   "scripts": {
