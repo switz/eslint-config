@@ -45,6 +45,17 @@ Or node:
 }
 ```
 
+Or typescript:
+
+```
+{
+  "extends": [
+    "@switz/eslint-config/typescript"
+  ]
+}
+```
+
+
 ## Reference
 
 https://eslint.org/docs/developer-guide/shareable-configs
