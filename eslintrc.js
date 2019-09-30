@@ -17,6 +17,7 @@ module.exports = {
     'key-spacing': ['error'],
     'keyword-spacing': ['error'],
     'linebreak-style': ['error', 'unix'],
+    'max-len': ['error', { code: 100 }],
     'no-console': 'warn',
     'no-multiple-empty-lines': ['error', {
       max: 2,
