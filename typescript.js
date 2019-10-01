@@ -14,6 +14,7 @@ module.exports = {
     '@typescript-eslint/indent': ['error', 2],
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/camelcase': 'off',
+    '@typescript-eslint/no-use-before-define': ['error', { variables: false }],
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
