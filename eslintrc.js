@@ -24,6 +24,7 @@ module.exports = {
       maxBOF: 0,
       maxEOF: 0,
     }],
+    'no-trailing-spaces': ['error'],
     'no-var': ['error'],
     'object-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': ['error'],
