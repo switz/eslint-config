@@ -4,10 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    './eslintrc.js',
-    'plugin:react/recommended',
-  ],
+  extends: ['./eslintrc.js', 'plugin:react/recommended'],
   rules: {
     'react/display-name': 'off',
   },

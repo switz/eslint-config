@@ -4,9 +4,6 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: [
-    './eslintrc.js',
-  ],
-  rules: {
-  },
+  extends: ['./eslintrc.js'],
+  rules: {},
 };
