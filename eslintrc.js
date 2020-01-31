@@ -1,3 +1,5 @@
+const prettierConfig = require('./prettier.config');
+
 module.exports = {
   extends: ['eslint:recommended'],
   globals: {},
@@ -9,7 +11,7 @@ module.exports = {
   },
   plugins: ['prettier'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['error', prettierConfig],
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['error'],
     'eol-last': ['error', 'always'],
