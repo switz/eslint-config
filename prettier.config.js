@@ -3,4 +3,5 @@ module.exports = {
   trailingComma: 'es5',
   printWidth: 100,
   quoteProps: 'consistent',
+  endOfLine: 'auto'
 };

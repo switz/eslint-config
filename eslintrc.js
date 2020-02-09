@@ -1,7 +1,9 @@
 const prettierConfig = require('./prettier.config');
 
 module.exports = {
-  extends: ['eslint:recommended'],
+  extends: [
+    "eslint:recommended"
+  ],
   globals: {},
   parser: 'babel-eslint',
   parserOptions: {

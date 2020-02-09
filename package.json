@@ -1,10 +1,11 @@
 {
   "name": "@switz/eslint-config",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "description": "",
   "main": "eslintrc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
   },
   "author": "",
   "license": "MIT",
