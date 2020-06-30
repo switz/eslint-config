@@ -1,9 +1,7 @@
 const prettierConfig = require('./prettier.config');
 
 module.exports = {
-  extends: [
-    "eslint:recommended"
-  ],
+  extends: ['eslint:recommended'],
   globals: {},
   parser: 'babel-eslint',
   parserOptions: {
@@ -33,6 +31,7 @@ module.exports = {
     // ],
     // 'no-trailing-spaces': ['error'],
     'no-var': ['error'],
+    'no-unused-vars': ['error', { ignoreRestSiblings: true }],
     // 'object-curly-spacing': ['error', 'always'],
     'prefer-arrow-callback': ['error'],
     'prefer-const': [
