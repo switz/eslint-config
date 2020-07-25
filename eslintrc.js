@@ -41,7 +41,7 @@ module.exports = {
       },
     ],
     // 'quote-props': ['error', 'consistent-as-needed'],
-    'quotes': ['error', 'single'],
+    'quotes': ['error', 'single', { avoidEscape: false }],
     // 'semi': ['error', 'always'],
     // 'space-before-blocks': ['error'],
   },
