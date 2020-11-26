@@ -24,7 +24,6 @@ module.exports = {
       {
         code: 100,
         ignoreComments: true,
-        ignorePattern: true,
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true,
