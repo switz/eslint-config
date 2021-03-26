@@ -7,7 +7,7 @@ module.exports = {
   extends: [
     './eslintrc.js',
     'plugin:react/recommended',
-    'prettier/react'
+    'prettier'
   ],
   rules: {
     'react/display-name': 'off',
