@@ -50,7 +50,7 @@ module.exports = {
       },
     ],
     // 'quote-props': ['error', 'consistent-as-needed'],
-    'quotes': ['error', 'single', { avoidEscape: true }],
+    'quotes': ['error', 'single', { avoidEscape: false }],
     // 'semi': ['error', 'always'],
     // 'space-before-blocks': ['error'],
   },
