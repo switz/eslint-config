@@ -18,6 +18,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/camelcase': 'off',
     '@typescript-eslint/no-use-before-define': ['error', { variables: false }],
+    '@typescript-eslint/no-empty-function': 'off'
   },
   parser: '@typescript-eslint/parser',
   parserOptions: {
