@@ -1,6 +1,6 @@
 {
   "name": "@switz/eslint-config",
-  "version": "6.2.12",
+  "version": "6.3.0",
   "description": "",
   "main": "eslintrc.js",
   "scripts": {
@@ -13,12 +13,12 @@
     "eslint": ">= 5"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.19.0",
-    "@typescript-eslint/parser": "^4.19.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.0",
+    "@typescript-eslint/parser": "^5.3.0",
     "babel-eslint": "^10.0.3",
-    "eslint-plugin-mdx": "^1.13.0",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.23.1",
-    "prettier": "2.2.1"
+    "eslint-plugin-mdx": "^1.16.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "prettier": "2.4.1"
   }
 }
