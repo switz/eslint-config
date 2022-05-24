@@ -7,6 +7,7 @@ module.exports = {
   extends: [
     './eslintrc.js',
     'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
     'prettier'
   ],
   rules: {
