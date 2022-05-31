@@ -6,8 +6,9 @@ module.exports = {
   parser: '@babel/eslint-parser',
   parserOptions: {
     allowImportExportEverywhere: true,
-    ecmaVersion: 6,
+    ecmaVersion: 8,
     sourceType: 'module',
+    requireConfigFile: false,
   },
   plugins: ['prettier'],
   rules: {
