@@ -1,6 +1,6 @@
 {
   "name": "@switz/eslint-config",
-  "version": "8.0.0",
+  "version": "8.0.1",
   "description": "",
   "main": "eslintrc.js",
   "scripts": {
@@ -16,6 +16,7 @@
     "@babel/eslint-parser": "^7.18.2",
     "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
+    "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-mdx": "^1.17.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
