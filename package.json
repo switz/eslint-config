@@ -1,6 +1,6 @@
 {
   "name": "@switz/eslint-config",
-  "version": "8.0.1",
+  "version": "9.0.0",
   "description": "",
   "main": "eslintrc.js",
   "scripts": {
@@ -13,14 +13,17 @@
     "eslint": ">= 5"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.18.2",
-    "@typescript-eslint/eslint-plugin": "^5.26.0",
-    "@typescript-eslint/parser": "^5.26.0",
-    "eslint-config-prettier": "^8.6.0",
-    "eslint-plugin-mdx": "^1.17.0",
+    "@babel/eslint-parser": "^7.21.8",
+    "@typescript-eslint/eslint-plugin": "^5.59.8",
+    "@typescript-eslint/parser": "^5.59.8",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-mdx": "^2.1.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "prettier": "2.6.2",
-    "prettier-plugin-tailwindcss": "^0.1.13"
+    "eslint-plugin-react": "^7.32.2",
+    "prettier": "2.8.8",
+    "prettier-plugin-tailwindcss": "^0.3.0",
+    "eslint-plugin-tailwindcss": "^3.12.1"
+  },
+  "devDependencies": {
   }
 }
