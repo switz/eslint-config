@@ -1,6 +1,6 @@
 {
   "name": "@switz/eslint-config",
-  "version": "9.1.0",
+  "version": "9.5.0",
   "description": "",
   "main": "eslintrc.js",
   "scripts": {
@@ -20,7 +20,7 @@
     "eslint-plugin-mdx": "^2.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.32.2",
-    "eslint-plugin-tailwindcss": "^3.12.1",
+    "eslint-plugin-tailwindcss": "^3.13.0",
     "prettier": "2.8.8",
     "prettier-plugin-tailwindcss": "^0.3.0"
   },
