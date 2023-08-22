@@ -1,5 +1,3 @@
-const prettierConfig = import('./prettier.config.cjs');
-
 module.exports = {
   extends: ['eslint:recommended'],
   globals: {},
@@ -12,7 +10,17 @@ module.exports = {
   },
   plugins: ['prettier'],
   rules: {
-    'prettier/prettier': ['error', prettierConfig],
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        trailingComma: 'es5',
+        printWidth: 100,
+        quoteProps: 'consistent',
+        endOfLine: 'auto',
+        plugins: ['prettier-plugin-tailwindcss'],
+      },
+    ],
     // 'comma-dangle': ['error', 'always-multiline'],
     // 'comma-spacing': ['error'],
     // 'eol-last': ['error', 'always'],
