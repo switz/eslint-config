@@ -30,7 +30,7 @@ If you need React support, use
 ```
 {
   "extends": [
-    "@switz/eslint-config/react"
+    "@switz/eslint-config/react.cjs"
   ]
 }
 ```
@@ -40,7 +40,7 @@ Or node:
 ```
 {
   "extends": [
-    "@switz/eslint-config/node"
+    "@switz/eslint-config/node.cjs"
   ]
 }
 ```
@@ -50,11 +50,10 @@ Or typescript:
 ```
 {
   "extends": [
-    "@switz/eslint-config/typescript"
+    "@switz/eslint-config/typescript.cjs"
   ]
 }
 ```
-
 
 ## Reference
 
