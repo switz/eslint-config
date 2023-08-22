@@ -1,4 +1,4 @@
-const prettierConfig = require('./prettier.config');
+const prettierConfig = import('./prettier.config.cjs');
 
 module.exports = {
   extends: ['eslint:recommended'],

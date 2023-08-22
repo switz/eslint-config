@@ -4,7 +4,7 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['./eslintrc.js', 'plugin:react/recommended', 'plugin:mdx/recommended', 'prettier'],
+  extends: ['./eslintrc.cjs', 'plugin:react/recommended', 'plugin:mdx/recommended', 'prettier'],
   rules: {
     'react/display-name': 'off',
   },

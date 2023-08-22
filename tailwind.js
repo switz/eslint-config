@@ -4,5 +4,5 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ['./eslintrc.js', 'plugin:tailwindcss/recommended'],
+  extends: ['./eslintrc.cjs', 'plugin:tailwindcss/recommended'],
 };

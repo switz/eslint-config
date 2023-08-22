@@ -1,8 +1,9 @@
 {
   "name": "@switz/eslint-config",
-  "version": "9.6.0",
+  "version": "10.0.0",
   "description": "",
   "main": "eslintrc.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint-check": "eslint --print-config path/to/main.js | eslint-config-prettier-check"
@@ -13,19 +14,19 @@
     "eslint": ">= 5"
   },
   "dependencies": {
-    "@babel/eslint-parser": "^7.22.7",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0",
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-mdx": "^2.1.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.32.2",
+    "@babel/eslint-parser": "^7.22.10",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-mdx": "^2.2.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "prettier": "2.8.8",
-    "prettier-plugin-tailwindcss": "^0.3.0"
+    "prettier": "3.0.2",
+    "prettier-plugin-tailwindcss": "^0.5.3"
   },
   "devDependencies": {
-    "eslint": "^8.44.0",
-    "@babel/core": "^7.22.8"
+    "@babel/core": "^7.22.10",
+    "eslint": "^8.47.0"
   }
 }
