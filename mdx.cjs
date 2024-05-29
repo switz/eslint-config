@@ -10,6 +10,7 @@ module.exports = {
   },
   settings: {
     'mdx/code-blocks': true,
+    "mdx/language-mapper": {},
     'react': {
       version: 'detect',
     },
