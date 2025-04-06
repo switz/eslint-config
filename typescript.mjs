@@ -2,7 +2,7 @@ import main from './eslint.config.mjs';
 import tseslint from 'typescript-eslint';
 
 export default [
-  main,
+  ...main,
   tseslint.configs.recommended,
   {
     rules: {

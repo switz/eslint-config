@@ -1,16 +1,12 @@
 import * as mdx from 'eslint-plugin-mdx';
-import main from './eslint.config.mjs';
 
 export default [
-  main,
+  // ...main,
   {
-    files: ['**/*.mdx'],
     ...mdx.flat,
     languageOptions: {
       parserOptions: {
-        ecmaFeatures: {
-          jsx: true,
-        },
+        markdownExtensions: ['mdx', 'md'],
       },
     },
     // optional, if you want to lint code blocks at the same
