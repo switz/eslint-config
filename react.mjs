@@ -3,7 +3,6 @@ import react from 'eslint-plugin-react';
 
 export default [
   ...main,
-  react,
   react.configs.flat.recommended,
   react.configs.flat['jsx-runtime'],
   {

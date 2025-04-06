@@ -4,7 +4,7 @@ import prettierPlugin from 'eslint-plugin-prettier/recommended';
 export default [
   js.configs.recommended,
   {
-    files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+    files: ['**/*.{js,jsx,ts,tsx}'],
     rules: {
       'max-len': [
         'error',
