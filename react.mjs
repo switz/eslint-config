@@ -1,5 +1,5 @@
-import main from './eslint.config.mjs';
 import react from 'eslint-plugin-react';
+import main from './eslint.config.mjs';
 
 export default [
   ...main,
@@ -8,6 +8,11 @@ export default [
   {
     rules: {
       'react/display-name': 'off',
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
     },
   },
 ];
