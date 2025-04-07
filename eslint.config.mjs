@@ -1,6 +1,5 @@
 import js from '@eslint/js';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
-import eslintPluginReadableTailwind from 'eslint-plugin-readable-tailwind';
 import globals from 'globals';
 
 import tseslint from 'typescript-eslint';
@@ -36,15 +35,7 @@ export default tseslint.config(
   tseslint.configs.recommended,
   {
     files: ['**/*.{js,jsx,ts,tsx}'],
-    plugins: {
-      'readable-tailwind': eslintPluginReadableTailwind,
-    },
     rules: {
-      // enable all recommended rules to warn
-      ...eslintPluginReadableTailwind.configs.warning.rules,
-      // enable all recommended rules to error
-      ...eslintPluginReadableTailwind.configs.error.rules,
-      'readable-tailwind/multiline': ['off'],
       'max-len': [
         'error',
         {
@@ -74,7 +65,6 @@ export default tseslint.config(
       'prettier/prettier': [
         'error',
         {
-          // plugins: ['prettier-plugin-tailwindcss'],
           singleQuote: true,
           trailingComma: 'es5',
           printWidth: 100,
