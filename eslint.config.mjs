@@ -1,7 +1,16 @@
+import globals from 'globals';
 import js from '@eslint/js';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
 
 export default [
+  {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.nodeBuiltin,
+      },
+    },
+  },
   js.configs.recommended,
   {
     files: ['**/*.{js,jsx,ts,tsx}'],

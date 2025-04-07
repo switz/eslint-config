@@ -1,3 +1,5 @@
+HI
+
 # switz's eslint-config
 
 ## Motivation
