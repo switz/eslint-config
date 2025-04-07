@@ -1,8 +1,6 @@
-import main from './eslint.config.mjs';
 import * as mdx from 'eslint-plugin-mdx';
 
 export default [
-  ...main,
   {
     ...mdx.flat,
     // files: ['**/*.mdx'],

@@ -18,14 +18,6 @@ import main from '@switz/eslint-config';
 export default [...main];
 ```
 
-If you need Typescript support, use
-
-```js
-import typescript from '@switz/eslint-config/typescript.mjs';
-
-export default [...typescript];
-```
-
 If you need React support, use
 
 ```js
