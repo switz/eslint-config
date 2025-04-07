@@ -26,21 +26,15 @@ import react from '@switz/eslint-config/react';
 export default [...react];
 ```
 
-Or typescript:
+If you need mdx support, use
 
 ```
-import typescript from '@switz/eslint-config/typescript';
+import mdx from '@switz/eslint-config/mdx';
 
-export default [...typescript];
+export default [...mdx];
 ```
 
-Or tailwind:
-
-```
-import tailwind from '@switz/eslint-config/tailwind';
-
-export default [...tailwind];
-```
+You should be able to combine configs just by spreading more into the array.
 
 ## Reference
 
