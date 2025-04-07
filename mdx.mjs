@@ -1,15 +1,17 @@
+import main from './eslint.config.mjs';
 import * as mdx from 'eslint-plugin-mdx';
 
 export default [
-  // ...main,
+  ...main,
   {
     ...mdx.flat,
-    languageOptions: {
-      parserOptions: {
-        markdownExtensions: ['mdx', 'md'],
-      },
-    },
-    // optional, if you want to lint code blocks at the same
+    // files: ['**/*.mdx'],
+    // languageOptions: {
+    //   // parserOptions: {
+    //   //   markdownExtensions: ['mdx', 'md'],
+    //   // },
+    // },
+    // // optional, if you want to lint code blocks at the same
     processor: mdx.createRemarkProcessor({
       lintCodeBlocks: true,
       // optional, if you want to disable language mapper, set it to `false`
