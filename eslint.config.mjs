@@ -32,9 +32,8 @@ export default tseslint.config(
     },
   },
   js.configs.recommended,
-  tseslint.configs.recommended,
   {
-    files: ['**/*.{js,jsx,ts,tsx}'],
+    files: ['**/*.{js,jsx}'],
     rules: {
       'max-len': [
         'error',
@@ -59,6 +58,7 @@ export default tseslint.config(
       'quotes': ['error', 'single', { avoidEscape: true }],
     },
   },
+  tseslint.configs.recommended,
   prettierPlugin,
   {
     rules: {
