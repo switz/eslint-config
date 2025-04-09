@@ -21,17 +21,19 @@ export default [...main];
 If you need React support, use
 
 ```js
+import main from '@switz/eslint-config';
 import react from '@switz/eslint-config/react.mjs';
 
-export default [...react];
+export default [...main, ...react];
 ```
 
 If you need mdx support, use
 
 ```js
+import main from '@switz/eslint-config';
 import mdx from '@switz/eslint-config/mdx.mjs';
 
-export default [...mdx];
+export default [...main, ...mdx];
 ```
 
 If you need tailwind support, use:
