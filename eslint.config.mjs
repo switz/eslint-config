@@ -49,6 +49,7 @@ export default tseslint.config(
       'no-var': ['error'],
       'no-unused-vars': ['error', { ignoreRestSiblings: true }],
       'prefer-arrow-callback': ['error'],
+      'no-template-curly-in-string': ['error'],
       'prefer-const': [
         'error',
         {
