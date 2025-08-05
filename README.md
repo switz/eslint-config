@@ -1,5 +1,3 @@
-HI
-
 # switz's eslint-config
 
 ## Installation
