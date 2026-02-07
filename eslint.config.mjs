@@ -17,7 +17,8 @@ import tseslint from 'typescript-eslint';
 //   },
 // });
 
-export default tseslint.config(
+/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
+export default [
   {
     languageOptions: {
       parserOptions: {
@@ -59,7 +60,7 @@ export default tseslint.config(
       'quotes': ['error', 'single', { avoidEscape: true }],
     },
   },
-  tseslint.configs.recommended,
+  ...tseslint.configs.recommended,
   prettierPlugin,
   {
     rules: {
@@ -74,5 +75,5 @@ export default tseslint.config(
         },
       ],
     },
-  }
-);
+  },
+];
