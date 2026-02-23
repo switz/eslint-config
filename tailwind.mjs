@@ -1,5 +1,7 @@
 import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
-export default [
+import { defineConfig } from 'eslint/config';
+
+export default defineConfig([
   {
     // enable all recommended rules
     extends: [eslintPluginBetterTailwindcss.configs.recommended],
@@ -17,4 +19,4 @@ export default [
       },
     },
   },
-];
+]);
