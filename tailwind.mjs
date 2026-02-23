@@ -1,17 +1,20 @@
-import eslintPluginReadableTailwind from 'eslint-plugin-readable-tailwind';
-
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss';
 export default [
   {
-    plugins: {
-      'readable-tailwind': eslintPluginReadableTailwind,
-    },
+    // enable all recommended rules
+    extends: [eslintPluginBetterTailwindcss.configs.recommended],
+
+    // if needed, override rules to configure them individually
     rules: {
-      // enable all recommended rules to warn
-      ...eslintPluginReadableTailwind.configs.warning.rules,
-      // enable all recommended rules to error
-      ...eslintPluginReadableTailwind.configs.error.rules,
-      // disabled because this conflicts with prettier. not worth the headache
-      'readable-tailwind/multiline': ['off'],
+      'better-tailwindcss/enforce-consistent-line-wrapping': ['warn', { printWidth: 100 }],
+      // 'better-tailwindcss/enforce-shorthand-classes': ['error'],
+    },
+
+    settings: {
+      'better-tailwindcss': {
+        // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
+        entryPoint: 'src/styles/global.css',
+      },
     },
   },
 ];

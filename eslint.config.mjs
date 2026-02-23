@@ -1,23 +1,14 @@
+// @ts-check
+
 import js from '@eslint/js';
 import prettierPlugin from 'eslint-plugin-prettier/recommended';
 import globals from 'globals';
 
 import tseslint from 'typescript-eslint';
 
-// export default (main, tseslint.configs.recommended, {
-//   rules: {
-//     'indent': 'off',
-//     'no-unused-vars': 'off',
-//     '@typescript-eslint/no-unused-vars': ['error', { ignoreRestSiblings: true }],
-//     '@typescript-eslint/indent': 'off',
-//     '@typescript-eslint/explicit-function-return-type': 'off',
-//     '@typescript-eslint/camelcase': 'off',
-//     '@typescript-eslint/no-use-before-define': ['error', { variables: false }],
-//     '@typescript-eslint/no-empty-function': 'off',
-//   },
-// });
-
-/** @type {import('@typescript-eslint/utils').TSESLint.FlatConfig.ConfigFile} */
+/**
+ * @type {import("eslint").Linter.Config[]}
+ * */
 export default [
   {
     languageOptions: {
