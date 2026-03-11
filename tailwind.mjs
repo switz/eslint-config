@@ -15,7 +15,7 @@ export default defineConfig([
     settings: {
       'better-tailwindcss': {
         // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
-        entryPoint: 'src/styles/global.css',
+        entryPoint: 'src/styles/globals.css',
       },
     },
   },
