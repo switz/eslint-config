@@ -1,9 +1,19 @@
 {
   "name": "@switz/eslint-config",
-  "version": "12.5.2",
+  "version": "13.0.0",
   "description": "",
   "main": "eslint.config.mjs",
   "type": "module",
+  "exports": {
+    ".": "./eslint.config.mjs",
+    "./react": "./react.mjs",
+    "./tailwind": "./tailwind.mjs",
+    "./mdx": "./mdx.mjs",
+    "./oxlint": "./oxlint.json",
+    "./oxfmt": "./.oxfmtrc.json",
+    "./oxlint/tailwind": "./oxlint.tailwind.json",
+    "./oxlint/react": "./oxlint.react.json"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "eslint-check": "eslint-config-prettier eslint.config.mjs"
@@ -12,6 +22,10 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": ">= 9"
+  },
+  "optionalPeerDependencies": {
+    "oxlint": ">= 0.16",
+    "oxfmt": ">= 0.1"
   },
   "dependencies": {
     "@eslint/js": "^10.0.1",

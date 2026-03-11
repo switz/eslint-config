@@ -46,6 +46,82 @@ export default [...main, ...react, ...tailwind];
 
 You should be able to combine configs just by spreading more into the array.
 
+## Oxlint + Oxfmt (Alternative)
+
+This package also ships oxlint and oxfmt configs as a faster alternative to ESLint + Prettier.
+
+### Setup
+
+Install oxlint and oxfmt, then reference the configs:
+
+```bash
+pnpm install -D oxlint oxfmt
+```
+
+Create an `oxlint.json` in your project root that extends the base config:
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "extends": ["@switz/eslint-config/oxlint"]
+}
+```
+
+For React, add the react config:
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "extends": [
+    "@switz/eslint-config/oxlint",
+    "@switz/eslint-config/oxlint/react"
+  ]
+}
+```
+
+For Tailwind, add the tailwind config:
+
+```json
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "extends": [
+    "@switz/eslint-config/oxlint",
+    "@switz/eslint-config/oxlint/react",
+    "@switz/eslint-config/oxlint/tailwind"
+  ]
+}
+```
+
+Then run:
+
+```bash
+oxlint -c oxlint.json
+```
+
+**Formatting** — copy `.oxfmtrc.json` to your project root:
+
+```bash
+cp node_modules/@switz/eslint-config/.oxfmtrc.json .oxfmtrc.json
+oxfmt .
+```
+
+Add scripts to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "lint:ox": "oxlint -c oxlint.json",
+    "fmt:ox": "oxfmt ."
+  }
+}
+```
+
+### Gaps vs ESLint configs
+
+- **React**: oxlint covers ~20 of 80+ `eslint-plugin-react` rules. Core rules like `jsx-key`, `no-direct-mutation-state`, hooks rules, and `jsx-no-duplicate-props` are covered. Rules like `no-unstable-nested-components`, `no-array-index-key`, `jsx-handler-names` are not.
+- **MDX**: oxfmt formats `.mdx` files, but does not lint embedded code blocks like `eslint-plugin-mdx` does.
+- **TypeScript type-aware rules**: oxlint's type-aware checking is in alpha (~73% coverage of `typescript-eslint` recommended rules).
+
 ## Reference
 
 https://eslint.org/docs/developer-guide/shareable-configs

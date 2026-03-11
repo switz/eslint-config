@@ -1,0 +1,21 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["better-tailwindcss"],
+  "rules": {
+    "better-tailwindcss/no-conflicting-classes": "error",
+    "better-tailwindcss/no-duplicate-classes": "error",
+    "better-tailwindcss/sort-classes": "warn",
+    "better-tailwindcss/no-unnecessary-whitespace": "warn",
+    "better-tailwindcss/enforce-consistent-line-wrapping": [
+      "warn",
+      {
+        "printWidth": 100
+      }
+    ]
+  },
+  "settings": {
+    "better-tailwindcss": {
+      "entryPoint": "src/styles/globals.css"
+    }
+  }
+}

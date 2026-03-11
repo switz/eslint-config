@@ -1,0 +1,85 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "rules": {
+    "no-console": "warn",
+    "no-var": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "prefer-arrow-callback": "error",
+    "no-template-curly-in-string": "error",
+    "prefer-const": [
+      "error",
+      {
+        "destructuring": "all"
+      }
+    ],
+    "no-undef": "error",
+    "no-redeclare": "error",
+    "no-debugger": "error",
+    "no-empty": "error",
+    "no-extra-boolean-cast": "error",
+    "no-irregular-whitespace": "error",
+    "no-loss-of-precision": "error",
+    "no-unsafe-finally": "error",
+    "no-unsafe-negation": "error",
+    "no-constant-condition": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-empty-character-class": "error",
+    "no-ex-assign": "error",
+    "no-func-assign": "error",
+    "no-inner-declarations": "error",
+    "no-invalid-regexp": "error",
+    "no-obj-calls": "error",
+    "no-prototype-builtins": "error",
+    "no-sparse-arrays": "error",
+    "no-unreachable": "error",
+    "use-isnan": "error",
+    "valid-typeof": "error",
+    "no-case-declarations": "error",
+    "no-empty-pattern": "error",
+    "no-fallthrough": "error",
+    "no-global-assign": "error",
+    "no-octal": "error",
+    "no-self-assign": "error",
+    "no-unused-labels": "error",
+    "no-useless-catch": "error",
+    "no-useless-escape": "error",
+    "no-with": "error",
+    "no-delete-var": "error",
+    "no-shadow-restricted-names": "error",
+    "require-yield": "error",
+    "typescript/no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "typescript/no-explicit-any": "warn",
+    "typescript/no-non-null-assertion": "warn",
+    "typescript/ban-ts-comment": "warn",
+    "typescript/no-empty-interface": "error",
+    "typescript/no-extra-non-null-assertion": "error",
+    "typescript/no-misused-new": "error",
+    "typescript/no-namespace": "error",
+    "typescript/no-this-alias": "error",
+    "typescript/no-var-requires": "error",
+    "typescript/prefer-as-const": "error"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.mts", "*.cts"],
+      "rules": {
+        "no-undef": "off",
+        "no-unused-vars": "off",
+        "no-redeclare": "off"
+      }
+    }
+  ],
+  "ignorePatterns": ["node_modules", "dist", "build", ".next"]
+}
