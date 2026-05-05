@@ -9,7 +9,6 @@
         "ignoreRestSiblings": true
       }
     ],
-    "prefer-arrow-callback": "error",
     "no-template-curly-in-string": "error",
     "prefer-const": [
       "error",
@@ -27,7 +26,6 @@
     "no-unsafe-finally": "error",
     "no-unsafe-negation": "error",
     "no-constant-condition": "error",
-    "no-dupe-args": "error",
     "no-dupe-keys": "error",
     "no-duplicate-case": "error",
     "no-empty-character-class": "error",
@@ -45,7 +43,6 @@
     "no-empty-pattern": "error",
     "no-fallthrough": "error",
     "no-global-assign": "error",
-    "no-octal": "error",
     "no-self-assign": "error",
     "no-unused-labels": "error",
     "no-useless-catch": "error",

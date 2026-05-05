@@ -1,6 +1,6 @@
 {
   "name": "@switz/eslint-config",
-  "version": "13.0.0",
+  "version": "13.0.2",
   "description": "",
   "main": "eslint.config.mjs",
   "type": "module",
